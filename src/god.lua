@@ -17,6 +17,8 @@ Console.new{
 
         local p_data = Instance.get_data(p)
         p_data.god = not p_data.god
+
+        Console.print("Invincibility is now "..tostring(p_data.god and "ON" or "OFF")..".")
     end
 }
 
