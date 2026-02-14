@@ -1,0 +1,10 @@
+﻿{
+	"name": "Console_Extensions",
+	"version_number": "1.0.0",
+	"website_url": "",
+	"description": "Adds a bunch of useful commands to the console.",
+	"dependencies": [
+		"ReturnOfModding-ReturnOfModding-1.1.16",
+		"ReturnsAPI-ReturnsAPI-0.1.44"
+	]
+}
