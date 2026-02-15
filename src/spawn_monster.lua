@@ -7,6 +7,11 @@ Console.new{
         {"[elite]", "string", "The namespace-identifier of the elite type (e.g., <y>ror-blazing</c>). Namespace is not required for vanilla types."},
     },
     function(args)
+        if not Util.bool(Global.__run_exists) then
+            Console.print("Not currently in a run.")
+            return
+        end
+        
         if (#args < 1)
         or (type(args[1]) ~= "string") then
             Console.print("Enter a valid card.")

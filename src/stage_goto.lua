@@ -30,6 +30,6 @@ Console.new{
             return
         end
 
-        gm.stage_goto(stage.value, variant - 1)
+        gm.stage_goto(stage.value, (variant or 1) - 1)
     end
 }

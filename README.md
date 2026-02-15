@@ -1,6 +1,7 @@
 Adds a bunch of useful commands to the console.  
 
 Type `help (command)` to view usage.  
+- `call_count`
 - `count`
 - `god`
 - `gold`
@@ -8,6 +9,7 @@ Type `help (command)` to view usage.
 - `item_take`
 - `kill_all`
 - `level`
+- `list_class`
 - `locate`
 - `lock_all`
 - `seppuku`
