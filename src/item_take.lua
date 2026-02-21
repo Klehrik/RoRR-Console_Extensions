@@ -2,7 +2,7 @@ Console.new{
     "item_take (item) [count] [temporary]",
     {
         "Take stacks of an item from the local player.",
-        {"(item)",      "string", "The namespace-identifier of the item (e.g., <y>ror-meatNugget</c>). Namespace is not required for vanilla items."},
+        {"(item)",      "string", "The namespace-identifier of the item (e.g., <y>meatNugget</c> or <y>ror-meatNugget</c>)."},
         {"[count]",     "number", "The number of stacks to take. <y>1</c> by default."},
         {"[temporary]", "bool",   "If <y>true</c>, removes temporary stacks. <y>false</c> by default."},
     },

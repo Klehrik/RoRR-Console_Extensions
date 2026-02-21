@@ -2,7 +2,7 @@ Console.new{
     "spawn (object) [count]",
     {
         "Spawn an instance(s) of an object at the current mouse position.",
-        {"(object)", "string", "The namespace-identifier of the object (e.g., <y>ror-lizard</c>). Namespace is not required for vanilla objects."},
+        {"(object)", "string", "The namespace-identifier of the object (e.g., <y>Lizard</c> or <y>ror-Lizard</c>)."},
         {"[count]",  "number", "The number of instances to spawn. <y>1</c> by default."},
     },
     function(args)

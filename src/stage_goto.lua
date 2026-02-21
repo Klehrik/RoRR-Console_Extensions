@@ -2,7 +2,7 @@ Console.new{
     "stage_goto (stage) [variant]",
     {
         "Go to a stage.",
-        {"(stage)",   "string", "The namespace-identifier of the stage (e.g., <y>ror-desolateForest</c>). Namespace is not required for vanilla stages."},
+        {"(stage)",   "string", "The namespace-identifier of the stage (e.g., <y>desolateForest</c> or <y>ror-desolateForest</c>)."},
         {"[variant]", "number", "The variant to go to, indexed from 1. Random variant by default."},
     },
     function(args)

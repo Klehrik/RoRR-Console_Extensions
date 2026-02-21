@@ -2,7 +2,7 @@ Console.new{
     "count (object)",
     {
         "Display the number of existing instances of an object.",
-        {"(object)", "string", "The namespace-identifier of the object (e.g., <y>ror-chest1</c>). Namespace is not required for vanilla objects."},
+        {"(object)", "string", "The namespace-identifier of the object (e.g., <y>Chest1</c> or <y>ror-Chest1</c>)."},
     },
     function(args)
         if (#args < 1)

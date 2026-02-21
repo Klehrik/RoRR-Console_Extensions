@@ -2,7 +2,7 @@ Console.new{
     "spawn_item (item) [count]",
     {
         "Spawn an item drop(s) at the current mouse position.",
-        {"(item)",  "string", "The namespace-identifier of the item (e.g., <y>ror-meatNugget</c>). Namespace is not required for vanilla items."},
+        {"(item)",  "string", "The namespace-identifier of the item (e.g., <y>meatNugget</c> or <y>ror-meatNugget</c>)."},
         {"[count]", "number", "The number of drops to spawn. <y>1</c> by default."},
     },
     function(args)

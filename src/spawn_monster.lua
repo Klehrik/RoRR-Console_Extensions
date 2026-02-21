@@ -2,9 +2,9 @@ Console.new{
     "spawn_monster (card) [count] [elite]",
     {
         "Spawn an enemy(s) from a monster card at the current mouse position.",
-        {"(card)",  "string", "The namespace-identifier of the monster card (e.g., <y>ror-lemurian</c>). Namespace is not required for vanilla cards."},
+        {"(card)",  "string", "The namespace-identifier of the monster card (e.g., <y>lemurian</c> or <y>ror-lemurian</c>)."},
         {"[count]", "number", "The number of instances to spawn. <y>1</c> by default."},
-        {"[elite]", "string", "The namespace-identifier of the elite type (e.g., <y>ror-blazing</c>). Namespace is not required for vanilla types."},
+        {"[elite]", "string", "The namespace-identifier of the elite type (e.g., <y>blazing</c> or <y>ror-blazing</c>)."},
     },
     function(args)
         if not Util.bool(Global.__run_exists) then

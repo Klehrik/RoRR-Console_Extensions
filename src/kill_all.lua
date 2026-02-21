@@ -2,7 +2,7 @@ Console.new{
     "kill_all [object]",
     {
         "Kill all actors (of a specified actor object). \nDefaults to all enemies if not specified.",
-        {"[object]", "string", "The namespace-identifier of the actor object (e.g., <y>ror-lizard</c>). Namespace is not required for vanilla objects."}
+        {"[object]", "string", "The namespace-identifier of the actor object (e.g., <y>Lizard</c> or <y>ror-Lizard</c>)."}
     },
     function(args)
         if not Util.bool(Global.__run_exists) then

@@ -2,7 +2,7 @@ Console.new{
     "item_give (item) [count] [temporary]",
     {
         "Give stacks of an item to the local player.",
-        {"(item)",      "string", "The namespace-identifier of the item (e.g., <y>ror-meatNugget</c>). Namespace is not required for vanilla items."},
+        {"(item)",      "string", "The namespace-identifier of the item (e.g., <y>meatNugget</c> or <y>ror-meatNugget</c>)."},
         {"[count]",     "number", "The number of stacks to give. <y>1</c> by default."},
         {"[temporary]", "bool",   "If <y>true</c>, the stacks will be temporary. <y>false</c> by default."},
     },

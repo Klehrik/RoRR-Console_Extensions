@@ -1,3 +1,6 @@
+### v1.0.2
+- Modify some command descriptions
+
 ### v1.0.1
 - Add `call_count`
 - Add `list_class`
