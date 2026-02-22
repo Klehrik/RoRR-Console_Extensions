@@ -11,6 +11,11 @@ Console.new{
             Console.print("Not currently in a run.")
             return
         end
+
+        if Net.client then
+            Console.print("Must be lobby host.")
+            return
+        end
         
         if (#args < 1)
         or (type(args[1]) ~= "string") then

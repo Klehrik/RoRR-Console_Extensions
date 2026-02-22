@@ -10,6 +10,11 @@ Console.new{
             return
         end
 
+        if Net.client then
+            Console.print("Must be lobby host.")
+            return
+        end
+
         if #args < 1 then
             local actors = Instance.find_all(gm.constants.pActor)
             for _, actor in ipairs(actors) do
@@ -31,7 +36,8 @@ Console.new{
                 return
             end
 
-            if gm.object_is_ancestor(obj.value, gm.constants.pActor) ~= 1 then
+            if  obj.value ~= gm.constants.pActor
+            and gm.object_is_ancestor(obj.value, gm.constants.pActor) ~= 1 then
                 Console.print("Object '"..args[1].."' is not an actor object.")
                 return
             end

@@ -1,12 +1,17 @@
 Console.new{
     "level (value)",
     {
-        "Set the level of the local player, triggering level-up effects per level gained. \nCannot set a lower value than current level.",
+        "Set the level of all players, triggering level-up effects per level gained. \nCannot set a lower value than current level.",
         {"(value)", "number", "The level to set."},
     },
     function(args)
         if not Util.bool(Global.__run_exists) then
             Console.print("Not currently in a run.")
+            return
+        end
+
+        if Net.client then
+            Console.print("Must be lobby host.")
             return
         end
 

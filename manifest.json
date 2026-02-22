@@ -1,6 +1,6 @@
 ﻿{
 	"name": "Console_Extensions",
-	"version_number": "1.0.2",
+	"version_number": "1.0.3",
 	"website_url": "https://github.com/Klehrik/RoRR-Console_Extensions",
 	"description": "Adds a bunch of useful commands to the console.",
 	"dependencies": [

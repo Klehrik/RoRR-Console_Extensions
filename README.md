@@ -1,6 +1,8 @@
 Adds a bunch of useful commands to the console.  
 
 Type `help (command)` to view usage.  
+- `buff_apply`
+- `buff_remove`
 - `call_count`
 - `count`
 - `god`
@@ -10,6 +12,7 @@ Type `help (command)` to view usage.
 - `kill_all`
 - `level`
 - `list_class`
+- `list_players`
 - `locate`
 - `lock_all`
 - `seppuku`

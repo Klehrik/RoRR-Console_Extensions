@@ -7,16 +7,7 @@ mods["ReturnsAPI-ReturnsAPI"].auto{
 
 PATH = _ENV["!plugins_mod_folder_path"]
 
-nsid_split = function(nsid)
-    local ns
-    local id = nsid
-    local delimiter = nsid:find("-")
-    if delimiter then
-        ns = nsid:sub(1, delimiter - 1)
-        id = nsid:sub(delimiter + 1, -1)
-    end
-    return id, ns
-end
+require("./helper")
 
 -- Require all files in `src/`
 local names = path.get_files(path.combine(PATH, "src"))

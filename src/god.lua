@@ -9,6 +9,11 @@ Console.new{
             return
         end
 
+        if Net.client then
+            Console.print("Must be lobby host.")
+            return
+        end
+
         local p = Player.get_local()
         if not Instance.exists(p) then
             Console.print("Local player does not exist.")

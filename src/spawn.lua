@@ -6,6 +6,11 @@ Console.new{
         {"[count]",  "number", "The number of instances to spawn. <y>1</c> by default."},
     },
     function(args)
+        if Net.client then
+            Console.print("Must be lobby host.")
+            return
+        end
+
         if (#args < 1)
         or (type(args[1]) ~= "string") then
             Console.print("Enter a valid object.")

@@ -10,6 +10,11 @@ Console.new{
             return
         end
 
+        if Net.client then
+            Console.print("Must be lobby host.")
+            return
+        end
+
         local player
         local tp_player = args[1]
         if tp_player then

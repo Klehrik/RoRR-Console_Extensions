@@ -12,6 +12,11 @@ Console.new{
             return
         end
 
+        if Net.client then
+            Console.print("Must be lobby host.")
+            return
+        end
+
         local status = not Util.bool(director.peace)
         director.peace = status
         if status then director_alarm_value = director:alarm_get(1)

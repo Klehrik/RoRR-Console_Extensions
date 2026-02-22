@@ -11,6 +11,11 @@ Console.new{
             return
         end
 
+        if Net.client then
+            Console.print("Must be lobby host.")
+            return
+        end
+
         if (#args < 1)
         or (type(args[1]) ~= "string") then
             Console.print("Enter a valid item.")
