@@ -1,3 +1,7 @@
+### v1.0.4
+- Add `equipment_remove`
+- Add `equipment_set`
+
 ### v1.0.3
 - Add `buff_apply`
 - Add `buff_remove`
