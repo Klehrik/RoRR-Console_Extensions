@@ -1,3 +1,6 @@
+### v1.0.5
+- Fix error with `gold`
+
 ### v1.0.4
 - Add `equipment_remove`
 - Add `equipment_set`
